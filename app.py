@@ -44,7 +44,9 @@ fig.update_layout(
     height=600,
     xaxis=dict(
         tickformat='%Y-%m-%d',  # Format for date display
-        dtick='7D'  # Tick every week
+        dtick='5D',  # Tick every 5 days
+        tickmode='linear',  # Ensures we get ticks every 5 days
+        ticks='outside',  # Place ticks outside the plot
     )
 )
 
