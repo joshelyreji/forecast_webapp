@@ -18,9 +18,7 @@ predictions_df = pd.DataFrame({
     'Predicted Sales': data.iloc[:, 1]
 })
 
-# Display the data as a table in Streamlit (optional)
-st.write("Here is the data used for the forecast:")
-st.dataframe(predictions_df)
+
 
 # Create an interactive line plot using Plotly
 fig = px.line(
